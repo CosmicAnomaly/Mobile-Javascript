@@ -1,0 +1,216 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+	<title>Standards Based Task 1</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+	<div data-role="page" id="homePage" >
+	 <div data-role="header">
+		<h1>Task 1 - Scott Robinson</h1>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#homePage" class="ui-btn-active ui-state-persist">Home</a></li>
+				<li><a href="#basicMath">Basic Math</a></li>
+				<li><a href="#areaMath">Area Math</a></li>
+					</ul>
+		</div>
+	 </div>
+	<div role="main" class="ui-content">
+		<ul data-role="listview" data-inset="true" data-theme="b" > 
+			<li data-role="list-divider">Current Functions</li> 
+				<li>
+					<div data-role="collapsible-set" data-theme="b" data-content-theme="b" data-inset="false">               
+					   <div data-role="collapsible">
+						  <h3>Basic Math</h3>
+						  	<p>Within the Basic Math view you will find these functions available:</p>
+						  <ul>
+							<li>Addition</li>
+							<li>Subtraction</li>
+							<li>Multiplication</li>
+							<li>Division</li>
+							<li>Average</li>
+						  </ul>
+						</div>
+						<div data-role="collapsible">
+							<h3>Area Math</h3>
+							<p>Within the Area Math view you will be able to find the area for the following Geometric shapes:</p>
+						<ul>
+							<li>Square</li>
+							<li>Rectangle</li>
+							<li>Parallelogram</li>
+							<li>Trapezoid</li>
+							<li>Circle</li>
+							<li>Ellipse</li>
+							<li>Triangle</li>
+						</ul>
+					   </div>
+					</div>
+				</li>
+		</ul>            
+
+		<div data-role="footer">
+			<h4>Standards Based Task 1</h4>
+		</div>
+	</div>
+</div>	 
+
+
+<!-- Start of second page -->
+	<div data-role="page" id="basicMath">
+
+		<div data-role="header">
+			<h1>Task 1 - Scott Robinson</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#homePage">Home</a></li>
+					<li><a href="#basicMath" class="ui-btn-active ui-state-persist">Basic Math</a></li>
+					<li><a href="#areaMath">Area Math</a></li>
+				</ul>
+			</div>
+		 </div>
+
+		
+		<div role="main" class="ui-content">
+		<style type="text/css">
+		.ui-input-text{
+		width: 75px
+		}
+		</style>
+	<form>
+     	<input type="text" name="numberOne" id="numberOne" value="">
+		<input type="text" name="numberTwo" id="numberTwo" value="">
+		<input type="button" data-inline="true" id="addition" name="addition" value="+">
+		<input type="button" data-inline="true" id="subtraction" name="subtraction" value="-">
+		<input type="button" data-inline="true" id="multiply" name="multiply" value="*">
+		<input type="button" data-inline="true" id="divide" name="divide" value="/">
+	</form>
+	
+	<form>
+		<label for="text-1">Hit "Add" to add as many numbers as you'd like, then hit "Average" to see the average.</label>
+    	<input type="text" name="averageNumber" id="averageNumber" value="">
+		<input type="button" data-inline="true" id="add" name="add" value="Add">
+		<input type="button" data-inline="true" id="average" name="average" value="Average">
+		</div>
+	</form>
+
+		
+		<div data-role="footer">
+			<h4>Basic Math</h4>
+		</div>
+		
+	<!-- Start of third page -->	
+	</div>
+</div>
+	<div data-role="page" id="areaMath">
+
+		<div data-role="header">
+			<h1>Task 1 - Scott Robinson</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#homePage">Home</a></li>
+					<li><a href="#basicMath">Basic Math</a></li>
+					<li><a href="#areaMath" class="ui-btn-active ui-state-persist">Area Math</a></li>
+				</ul>
+			</div>
+		 </div>
+
+		
+		<div role="main" class="ui-content">
+			<ul data-role="listview" data-inset="true" data-theme="b" > 
+			<li data-role="list-divider">Finding the Area</li> 
+				<li>
+					<div data-role="collapsible-set" data-theme="b" data-content-theme="b" data-inset="false">               
+					   <div data-role="collapsible">
+						  <h3>Square</h3>
+						  <form>
+						  <label>Side</label>
+						  <input type="text" name="squareSide" id="squareSide" data-theme="a" value="">
+						  <input type="button" data-inline="true" id="squareArea" name="squareArea" value="Calculate">
+						  </form>
+						</div>
+						<div data-role="collapsible">
+							<h3>Rectangle</h3>
+							<form>
+						  <label>Side A</label>
+						  <input type="text" name="rectSideA" id="rectSideA" data-theme="a" value="">
+						  <label>Side B</label>
+						  <input type="text" name="rectSideB" id="rectSideB" data-theme="a" value="">
+						  <input type="button" data-inline="true" id="rectangleArea" name="rectangleArea" value="Calculate">
+						  </form>
+					   </div>
+					   <div data-role="collapsible">
+							<h3>Parallelogram</h3>
+							<form>
+						  <label>Base</label>
+						  <input type="text" name="paraBase" id="paraBase" data-theme="a" value="">
+						  <label>Height</label>
+						  <input type="text" name="paraHeight" id="paraHeight" data-theme="a" value="">
+						  <input type="button" data-inline="true" id="paraArea" name="paraArea" value="Calculate">
+						  </form>
+					   </div>
+					   <div data-role="collapsible">
+							<h3>Trapezoid</h3>
+							<form>
+						  <label>Base A</label>
+						  <input type="text" name="trapBaseA" id="trapBaseA" data-theme="a" value="">
+						  <label>Base B</label>
+						  <input type="text" name="trapBaseB" id="trapBaseB" data-theme="a" value="">
+						  <label>Height</label>
+						  <input type="text" name="trapHeight" id="trapHeight" data-theme="a" value="">
+						  <input type="button" data-inline="true" id="trapArea" name="trapArea" value="Calculate">
+						  </form>
+					   </div>
+					   <div data-role="collapsible">
+							<h3>Circle</h3>
+							<form>
+						  <label>Radius</label>
+						  <input type="text" name="circleRadius" id="circleRadius" data-theme="a" value="">
+						  <input type="button" data-inline="true" id="circleArea" name="circleArea" value="Calculate">
+						  </form>
+					   </div>
+					   <div data-role="collapsible">
+							<h3>Ellipse</h3>
+							<form>
+						  <label>Axis A</label>
+						  <input type="text" name="ellAxisA" id="ellAxisA" data-theme="a" value="">
+						  <label>Axis B</label>
+						  <input type="text" name="ellAxisB" id="ellAxisB" data-theme="a" value="">
+						  <input type="button" data-inline="true" id="ellipseArea" name="ellipseArea" value="Calculate">
+						  </form>
+					   </div>
+					   <div data-role="collapsible">
+							<h3>Triangle</h3>
+							<form>
+						  <label>Base</label>
+						  <input type="text" name="triBase" id="triBase" data-theme="a" value="">
+						  <label>Height</label>
+						  <input type="text" name="triHeight" id="triHeight" data-theme="a" value="">
+						  <input type="button" data-inline="true" id="triangleArea" name="triangleArea" value="Calculate">
+						  </form>
+					   </div>
+					   
+					</div>
+				</li>
+		</ul>
+		</div>
+			
+
+		<div data-role="footer">
+			<h4>Area Math</h4>
+		</div>
+		
+		
+		</div>
+	 
+	</div>	 
+</body>
+</html>
